@@ -382,7 +382,7 @@ async function loadReleaseChangelog() {
     if (container.dataset.loaded === 'true') return;
 
     // 拉取最新发布的版本（包含你上传 xian_v1.0.0.apk 时写的日志）
-    const apiUrl = 'https://api.github.com/repos/ZGCP/sine/releases/latest';
+    const apiUrl = 'https://sine-releases-proxy.your-cf-subdomain.workers.dev';
 
     try {
         const res = await fetch(apiUrl);
